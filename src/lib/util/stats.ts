@@ -3,7 +3,7 @@ import type { AnalyticsInstance } from 'analytics';
 export let analytics: AnalyticsInstance | undefined;
 
 export const initAnalytics = async (): Promise<void> => {
-  if (browser && !analytics) {
+  if (false && browser && !analytics) {
     try {
       const [{ Analytics }, { default: plausible }] = await Promise.all([
         import('analytics'),
